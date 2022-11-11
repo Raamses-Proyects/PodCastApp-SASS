@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+.seccion {
+    padding: 3rem 0;
+    @include m.tablet { 
+        padding: 8rem 0;
+    }
+}
+.boton-plan {
+    @include m.boton(v.$primario, v.$secundario);
+    border: 2px solid v.$blanco;
+    @include m.tablet {
+        display: block;
+    }
+}

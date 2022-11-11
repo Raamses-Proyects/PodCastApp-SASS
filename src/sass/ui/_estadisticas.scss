@@ -1,0 +1,9 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.estadisticas {
+    h2 {
+        @include m.heading(v.$primario);
+        margin: 0 0 2.5rem 0;
+    }
+}
